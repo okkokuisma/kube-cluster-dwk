@@ -4,12 +4,12 @@ metadata:
   name: nats
   namespace: default
 spec:
-  interval: 5m
+  interval: 1m
   chart:
     spec:
       chart: nats
       sourceRef:
         kind: HelmRepository
         name: nats
-        namespace: flux-system
+        namespace: default
       interval: 1m
